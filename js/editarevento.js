@@ -39,10 +39,9 @@ formularioevento.addEventListener('submit', function (e) {
       number_tickets: data.get('lotacao')
     })
   }).then(function (response) {
-    console.log(response)
     if (response.status == 200) {
       alert('O seu evento foi atualizado com sucesso!')
-      location.href = '/admin.html'
+      location.href = './admin.html'
     }
   })
 })
