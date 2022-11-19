@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+body {
+  font-family: 'Questrial', sans-serif;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+header {
+  position: relative;
+  box-shadow: 0px 5px 4px 0px rgb(63 63 63 / 27%);
+  width: 100%;
+  background-color: #fff;
+}
+aside {
+  min-height: 100vh;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #c2185b;
+}
+
+.btn-primary {
+  background-color: #c2185b;
+  border-color: #c2185b;
+}
+
+main.login {
+  width: 400px;
+}
+
+section.full {
+  width: 100%;
+  min-height: 80vh;
+  padding: 50px 0;
+}
+
+article.evento {
+  width: 350px;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+}
+
+footer nav ul li {
+  padding: 10px;
+}
+
+.slide-controller:nth-child(1):checked ~ .slide-show .slides-list {
+  --selected-item: 0;
+}
+.slide-controller:nth-child(2):checked ~ .slide-show .slides-list {
+  --selected-item: 1;
+}
+.slide-controller:nth-child(3):checked ~ .slide-show .slides-list {
+  --selected-item: 2;
+}
+.slide-controller:nth-child(4):checked ~ .slide-show .slides-list {
+  --selected-item: 3;
+}
+
+.slide-show {
+  overflow: hidden;
+}
+
+.slides-list {
+  --selected-item: 0;
+  --total-items: 4;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+  left: calc(var(--selected-item) * -100%);
+  width: calc(var(--total-items) * 100%);
+  transition: left 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.slide img {
+  width: 1024px;
+
+  border-radius: 20px;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+dialog {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  width: 80%;
+}
+
+dialog .modalButton {
+  background-color: #c2185b;
+  border-color: #c2185b;
+  color: #fff;
+  border-radius: 5px;
+}
