@@ -42,7 +42,7 @@ formularioevento.addEventListener('submit', function (e) {
     console.log(response)
     if (response.status == 200) {
       alert('O seu evento foi atualizado com sucesso!')
-      location.href = '/admin.html'
+      location.href = 'https://hectorbararua.github.io/Sound-Garden/admin.html'
     }
   })
 })
